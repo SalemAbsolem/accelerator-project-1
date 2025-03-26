@@ -1,0 +1,115 @@
+// Text colors
+$color-text-primary: #102654;
+$color-text-secondary: #ffffff;
+$color-text-accient: #103aae;
+$color-text-gradient: linear-gradient(128deg, #d10a42 0%, #0041ca 45.58%);
+
+// Buttons
+$color-border-light: #ffffff;
+$color-border-dark: #102654;
+$color-border-accient: #1c3374;
+$color-button-gradient: linear-gradient(149deg, #d10a42 0.85%, #00359f 100%);
+$color-button-tab: #d10a42;
+
+// Background
+$color-background-primary: #ffffff;
+$color-background-secondary: #f8f9fc;
+$color-background-banner: #ed0233;
+$color-background-dark: #102654;
+$color-background-gradient: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
+$color-background-footer: #030a1a;
+$color-background-alt: #1c3374;
+
+// Icons
+$color-icon-light: #ffffff;
+$color-icon-dark: #102654;
+
+// Form
+$color-form-primary: #ffffff;
+$color-form-error: #ff121f;
+
+// Breakpoints
+$breakpoint-mobile: 320px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1366px;
+$breakpoint-gap: 0.02px;
+
+// Media
+$mobile-only: "(max-width: #{$breakpoint-tablet - $breakpoint-gap})";
+$tablet-only: "(min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - $breakpoint-gap})";
+$desktop-only: "(min-width: #{$breakpoint-desktop})";
+$not-mobile: "(min-width: #{$breakpoint-tablet})";
+$not-desktop: "(max-width: #{$breakpoint-desktop - $breakpoint-gap})";
+
+// Fonts
+$fonts-primary: "Alumni Sans", "Arial", sans-serif;
+$fonts-secondary: "Roboto Condensed", "Arial", sans-serif;
+
+// Heading
+$h1: normal 800 92px / 110px $fonts-primary;
+$h2: normal 600 82px / 96px $fonts-primary;
+$h3: normal 600 54px / 54px $fonts-primary;
+$h4: normal 700 26px / 26px $fonts-secondary;
+$h5: normal 400 24px / 24px $fonts-secondary;
+$h6: normal 400 22px / 22px $fonts-secondary;
+
+// Text
+$text-l: normal 300 18px / 24px $fonts-secondary;
+$text-m: normal 300 16px / 24px $fonts-secondary;
+$text-s: normal 400 14px / 22px $fonts-secondary;
+
+// Buttons
+$tabs-lined: normal 400 20px / 20px $fonts-secondary;
+$tabs-button: normal 400 18px / 18px $fonts-secondary;
+$button-l: normal 700 14px / 14px $fonts-secondary;
+$button-m: normal 700 12px / 12px $fonts-secondary;
+
+
+// Numbers
+$num-xl: 700 100px / 150px $fonts-secondary;
+$num-l: 700 70px / 70px $fonts-secondary;
+$num-m: 700 60px / 90px $fonts-secondary;
+$num-s: 700 40px / 40px $fonts-secondary;
+
+@media #{$tablet-only} {
+  // Heading
+  $h1: normal 800 72px / 85px $fonts-primary;
+  $h3: normal 600 42px / 42px $fonts-primary;
+  $h4: normal 700 24px / 24px $fonts-secondary;
+  $h5: normal 400 22px / 22px $fonts-secondary;
+  $h6: normal 400 20px / 20px $fonts-secondary;
+
+  // Buttons
+  $tabs-lined: normal 400 18px / 18px $fonts-secondary;
+}
+
+@media #{$not-desktop} {
+  // Heading
+  $h2: normal 600 48px / 54px $fonts-primary;
+
+  // Numbers
+  $num-s: 700 24px / 24px $fonts-secondary;
+}
+
+@media #{$mobile-only} {
+  // Heading
+  $h1: normal 800 62px / 62px $fonts-primary;
+  $h3: normal 600 32px / 32px $fonts-primary;
+  $h4: normal 700 22px / 22px $fonts-secondary;
+  $h5: normal 400 20px / 20px $fonts-secondary;
+  $h6: normal 400 18px / 20px $fonts-secondary;
+
+  // Text
+  $text-l: normal 300 16px / 20px $fonts-secondary;
+  $text-m: normal 300 14px / 22px $fonts-secondary;
+  $text-s: normal 400 14px / 20px $fonts-secondary;
+
+  // Buttons
+  $tabs-lined: normal 400 16px / 16px $fonts-secondary;
+  $tabs-button: normal 400 16px / 16px $fonts-secondary;
+
+  // Numbers
+  $num-xl: 700 80px / 120px $fonts-secondary;
+  $num-l: 700 64px / 64px $fonts-secondary;
+  $num-m: 700 48px / 72px $fonts-secondary;
+}

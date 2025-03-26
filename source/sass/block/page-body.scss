@@ -1,0 +1,11 @@
+.page-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  font: $text-m;
+  color: $color-text-primary;
+  background-color: $color-background-primary;
+  overflow-x: hidden;
+}
